@@ -1,6 +1,6 @@
-# 	SharpAbeebus
+# SharpAbeebus
 
-**SharpAbeebus is a modern C# .NET 8 rewrite of the original Python 3 [SharpAbeebus](https://github.com/13Cubed/SharpAbeebus) GeoIP lookup utility. It utilizes [ipinfo.io](https://ipinfo.io) services. This program is very useful for parsing email headers, log files, and any other arbitrary data for IPv4 addresses, and then obtaining GeoIP data for each of those addresses.**
+**SharpAbeebus is a modern C# .NET 8 rewrite of the original Python 3 [Abeebus](https://github.com/13Cubed/Abeebus) GeoIP lookup utility. It utilizes [ipinfo.io](https://ipinfo.io) services. This program will parse email headers, log files, and any other arbitrary data for IPv4 addresses, and then obtain GeoIP data for each of those addresses.**
 
 For any given file(s), SharpAbeebus will:
 
