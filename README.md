@@ -1,10 +1,9 @@
 # SharpAbeebus
-
-**SharpAbeebus is a modern C# .NET 8 rewrite of the original Python 3 [Abeebus](https://github.com/13Cubed/Abeebus) GeoIP lookup utility. It utilizes [ipinfo.io](https://ipinfo.io) services. This program will parse email headers, log files, and any other arbitrary data for IPv4 addresses, and then obtain GeoIP data for each of those addresses.**
+**SharpAbeebus is a C# .NET 8 port of the Python 3 [Abeebus](https://github.com/13Cubed/Abeebus) GeoIP lookup utility utilizing [ipinfo.io](https://ipinfo.io) services, for those who prefer a native Windows binary. This program is very useful for parsing email headers, log files, and any other arbitrary data for IPv4 addresses, and then obtaining GeoIP data for each of those addresses.**
 
 For any given file(s), SharpAbeebus will:
 
-- Extract valid IPv4 addresses (e.g., "CSI: Cyber" addresses like `951.27.9.840` will not match)
+- Extract valid IPv4 addresses (e.g., "CSI: Cyber" addresses like 951.27.9.840 will not match)
 - Ignore duplicates
 - Ignore bogon addresses, the loopback network, link local addresses, and RFC 1918 (private) addresses
 
@@ -18,15 +17,13 @@ By default, SharpAbeebus will display the data to stdout in the following format
 IP Address    | Hostname                                  | Country | Region   | City    | Postal Code | Latitude | Longitude | ASN                     | Count
 52.73.116.225 | ec2-52-73-116-225.compute-1.amazonaws.com | US      | Virginia | Ashburn | 20149       | 39.0437  | -77.4875  | AS14618 Amazon.com Inc. | 5
 ```
-
-- Using the `-w` option, you can provide a filename to which SharpAbeebus will output the data in CSV format (useful for working with large data sets in **Timeline Explorer**, **Microsoft Excel**, or **LibreOffice Calc**):
+- Using the "**-w**" option, you can provide a filename to which SharpAbeebus will output the data in CSV format (useful for working with large data sets in **Timeline Explorer**, **Microsoft Excel**, or **LibreOffice Calc**):
 
 ```
 IP Address,Hostname,Country,Region,City,Postal Code,Latitude,Longitude,ASN,Count
 52.73.116.225,ec2-52-73-116-225.compute-1.amazonaws.com,US,Virginia,Ashburn,20149,39.0437,-77.4875,AS14618 Amazon.com Inc.,5
 ```
-
-- Using the `-a` option, you can provide an **ipinfo.io API** key if you have large datasets to process.
+- Using the "**-a**" option, you can provide an **ipinfo.io API** key if you have large datasets to process.
 
 ## Requirements
 
